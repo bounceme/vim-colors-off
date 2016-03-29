@@ -81,7 +81,7 @@ endfunction
 
 call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
 call s:h("Cursor",        {"bg": s:blue, "fg": s:norm })
-call s:h("Comment",       {"fg": s:bg_subtle, "gui": "italic"})
+call s:h("Comment",       {"fg": s:medium_grey, "gui": "italic"})
 
 "call s:h("Constant",      {"fg": s:cyan})
 hi! link Constant         Normal
@@ -197,3 +197,12 @@ hi link GitGutterAdd                LineNr
 hi link GitGutterDelete             LineNr
 hi link GitGutterChange             LineNr
 hi link GitGutterChangeDelete       LineNr
+
+
+hi! link String Normal
+hi! link Special Normal
+hi! link Type Normal
+hi SneakPluginTarget ctermfg=196 guifg=red ctermbg=16 guibg=Black 
+hi SneakStreakMask guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
+hi SneakStreakTarget ctermfg=196 guifg=red ctermbg=16 guibg=Black 
+hi link SneakStreakStatusLine StatusLineNC
