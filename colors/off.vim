@@ -198,7 +198,6 @@ hi link GitGutterDelete             LineNr
 hi link GitGutterChange             LineNr
 hi link GitGutterChangeDelete       LineNr
 
-
 hi! link String Normal
 hi! link Special Normal
 hi! link Type Normal
