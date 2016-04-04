@@ -245,8 +245,7 @@ hi link GitGutterChangeDelete       LineNr
 hi! link String Normal
 hi! link Special Normal
 hi! link Type Normal
-hi SneakPluginTarget ctermfg=196 guifg=red ctermbg=16 guibg=Black 
+hi SneakPluginTarget ctermfg=169 guifg=#e32791 ctermbg=16 guibg=Black 
 hi SneakStreakMask guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
-hi SneakStreakTarget ctermfg=196 guifg=red ctermbg=16 guibg=Black 
+hi SneakStreakTarget ctermfg=169 guifg=#e32791 ctermbg=16 guibg=Black 
 hi link SneakStreakStatusLine StatusLineNC
-
