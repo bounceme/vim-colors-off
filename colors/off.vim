@@ -9,93 +9,210 @@
 " https://github.com/reedes/vim-colors-pencil
 "
 """
+" This scheme was created by CSApproxSnapshot
+" on Sun, 03 Apr 2016
+
 hi clear
-
-if exists('syntax on')
-    syntax reset
+if exists("syntax_on")
+  syntax reset
 endif
 
-let g:colors_name='off'
+hi Normal term=NONE cterm=NONE ctermbg=234 ctermfg=251 gui=NONE guibg=#212121 guifg=#c6c6c6
+hi perlAutoload term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi SpecialKey term=bold cterm=NONE ctermbg=bg ctermfg=115 gui=NONE guibg=bg guifg=#5fd7a7
+hi NonText term=bold cterm=NONE ctermbg=bg ctermfg=243 gui=NONE guibg=bg guifg=#767676
+hi Directory term=bold cterm=NONE ctermbg=bg ctermfg=38 gui=NONE guibg=bg guifg=#008ec4
+hi ErrorMsg term=NONE cterm=NONE ctermbg=bg ctermfg=198 gui=NONE guibg=bg guifg=#fb007a
+hi IncSearch term=reverse cterm=NONE ctermbg=221 ctermfg=238 gui=NONE guibg=#f3e430 guifg=#424242
+hi Search term=reverse cterm=NONE ctermbg=238 ctermfg=fg gui=NONE guibg=#424242 guifg=fg
+hi MoreMsg term=bold cterm=bold ctermbg=bg ctermfg=243 gui=bold guibg=bg guifg=#767676
+hi LineNr term=underline cterm=NONE ctermbg=bg ctermfg=238 gui=NONE guibg=bg guifg=#424242
+hi rubyRepeatExpression term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi ColorColumn term=reverse cterm=NONE ctermbg=238 ctermfg=fg gui=NONE guibg=#424242 guifg=fg
+hi Cursor term=NONE cterm=NONE ctermbg=81 ctermfg=251 gui=NONE guibg=#20bbfc guifg=#c6c6c6
+hi vimSubstRep4 term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimCollClass term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi SpellLocal term=underline cterm=underline ctermbg=bg ctermfg=36 gui=underline guibg=bg guifg=fg guisp=#10a778
+hi Pmenu term=NONE cterm=NONE ctermbg=238 ctermfg=251 gui=NONE guibg=#424242 guifg=#c6c6c6
+hi PmenuSel term=NONE cterm=NONE ctermbg=81 ctermfg=251 gui=NONE guibg=#20bbfc guifg=#c6c6c6
+hi PmenuSbar term=NONE cterm=NONE ctermbg=238 ctermfg=251 gui=NONE guibg=#424242 guifg=#c6c6c6
+hi PmenuThumb term=NONE cterm=NONE ctermbg=238 ctermfg=251 gui=NONE guibg=#424242 guifg=#c6c6c6
+hi TabLine term=underline cterm=NONE ctermbg=236 ctermfg=251 gui=NONE guibg=#303030 guifg=#c6c6c6
+hi TabLineSel term=bold cterm=bold ctermbg=238 ctermfg=81 gui=bold guibg=#424242 guifg=#20bbfc
+hi TabLineFill term=reverse cterm=NONE ctermbg=236 ctermfg=251 gui=NONE guibg=#303030 guifg=#c6c6c6
+hi CursorColumn term=reverse cterm=NONE ctermbg=236 ctermfg=fg gui=NONE guibg=#303030 guifg=fg
+hi perlFormat term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi CtrlPLinePre term=NONE cterm=NONE ctermbg=bg ctermfg=234 gui=NONE guibg=bg guifg=#212121
+hi vimStdPlugin term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podBoldItalic term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podBoldOpen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podBoldAlternativeDelimOpen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podItalicBold term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podItalicOpen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podItalicAlternativeDelimOpen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podNoSpaceOpen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podNoSpaceAlternativeDelimOpen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podIndexOpen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyKeywordAsMethod term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimRubyRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimMapLhs term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimAutoCmdSpace term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimAutoEventList term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimAutoCmdSfxList term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi lCursor term=NONE cterm=NONE ctermbg=251 ctermfg=234 gui=NONE guibg=#c6c6c6 guifg=#212121
+hi MatchParen term=reverse cterm=NONE ctermbg=238 ctermfg=251 gui=NONE guibg=#424242 guifg=#c6c6c6
+hi vimMapRhs term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi Comment term=bold cterm=NONE ctermbg=bg ctermfg=243 gui=italic guibg=bg guifg=#767676
+hi vimGlobal term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimIsCommand term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimExtCmd term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimFilter term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podIndexAlternativeDelimOpen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podBold term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podBoldAlternativeDelim term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podItalic term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi podItalicAlternativeDelim term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlBraces term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimMapRhsExtend term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimMenuBang term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimMenuPriority term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi Underlined term=underline cterm=underline ctermbg=bg ctermfg=251 gui=underline guibg=bg guifg=#c6c6c6
+hi Ignore term=NONE cterm=NONE ctermbg=bg ctermfg=234 gui=NONE guibg=bg guifg=#212121
+hi vimMenuRhs term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi Todo term=NONE cterm=bold ctermbg=198 ctermfg=231 gui=bold guibg=#fb007a guifg=#ffffff
+hi perlSync term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlSyncPOD term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimPerlRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSet term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimUserCmd term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimCmdSep term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlFakeGroup term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi pythonSpaceError term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi pythonSync term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimPythonRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimAugroupSyncA term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimNormCmds term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimGroupList term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyInterpolation term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyDelimEscape term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyMultilineComment term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimFiletype term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimAugroup term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimExecute term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimFunction term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlFiledescStatementNocomma term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlFiledescStatementComma term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi CursorLine term=underline cterm=NONE ctermbg=236 ctermfg=fg gui=NONE guibg=#303030 guifg=fg
+hi SpellRare term=reverse cterm=underline ctermbg=bg ctermfg=198 gui=underline guibg=bg guifg=fg guisp=#fb007a
+hi vimAuSyntax term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimClusterName term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSynKeyRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyNestedParentheses term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyNestedCurlyBraces term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyNestedAngleBrackets term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyNestedSquareBrackets term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyRegexpParens term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimOperParen term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSynLine term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlStatementIndirObjWrap term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi Error term=reverse cterm=NONE ctermbg=169 ctermfg=231 gui=NONE guibg=#e32791 guifg=#ffffff
+hi vimSynMatchRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSynMtchCchar term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi qfLineNr term=NONE cterm=NONE ctermbg=bg ctermfg=243 gui=NONE guibg=bg guifg=#767676
+hi htmlH1 term=NONE cterm=NONE ctermbg=234 ctermfg=251 gui=NONE guibg=#212121 guifg=#c6c6c6
+hi htmlH2 term=NONE cterm=NONE ctermbg=234 ctermfg=251 gui=NONE guibg=#212121 guifg=#c6c6c6
+hi htmlH3 term=NONE cterm=NONE ctermbg=234 ctermfg=251 gui=NONE guibg=#212121 guifg=#c6c6c6
+hi htmlH4 term=NONE cterm=NONE ctermbg=234 ctermfg=251 gui=NONE guibg=#212121 guifg=#c6c6c6
+hi htmlH5 term=NONE cterm=NONE ctermbg=234 ctermfg=251 gui=NONE guibg=#212121 guifg=#c6c6c6
+hi htmlH6 term=NONE cterm=NONE ctermbg=234 ctermfg=251 gui=NONE guibg=#212121 guifg=#c6c6c6
+hi rubyRegexpBrackets term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyLocalVariableOrMethod term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyBlockArgument term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimAugroupError term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyClassDeclaration term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlVarMember term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlVarBlock term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlVarBlock2 term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSynRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSynPatMod term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSyncLines term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSyncMatch term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSyncLinebreak term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSyncLinecont term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi SneakPluginTarget term=NONE cterm=NONE ctermbg=16 ctermfg=196 gui=NONE guibg=#000000 guifg=#ff0000
+hi SneakStreakMask term=NONE cterm=NONE ctermbg=16 ctermfg=243 gui=NONE guibg=#000000 guifg=#737373
+hi SneakStreakTarget term=NONE cterm=NONE ctermbg=16 ctermfg=196 gui=NONE guibg=#000000 guifg=#ff0000
+hi rubyBlockParameterList term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyHeredocStart term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimEcho term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimIf term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi perlPackageConst term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyAliasDeclaration2 term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyAliasDeclaration term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyMethodDeclaration term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimHiLink term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyModuleDeclaration term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimHiKeyList term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimHiBang term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi NONE term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimFuncBody term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimFuncBlank term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimEscapeBrace term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSetEqual term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSubstRep term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSubstRange term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimHiCtermColor term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimHiFontname term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimHiGuiFontname term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyMethodBlock term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyBlock term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyDoBlock term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi CursorLineNr term=bold cterm=NONE ctermbg=236 ctermfg=81 gui=NONE guibg=#303030 guifg=#20bbfc
+hi Question term=NONE cterm=NONE ctermbg=bg ctermfg=169 gui=NONE guibg=bg guifg=#e32791
+hi StatusLine term=bold,reverse cterm=NONE ctermbg=236 ctermfg=fg gui=NONE guibg=#303030 guifg=fg
+hi StatusLineNC term=reverse cterm=NONE ctermbg=236 ctermfg=243 gui=NONE guibg=#303030 guifg=#767676
+hi VertSplit term=reverse cterm=NONE ctermbg=236 ctermfg=236 gui=NONE guibg=#303030 guifg=#303030
+hi Title term=bold cterm=NONE ctermbg=bg ctermfg=38 gui=NONE guibg=bg guifg=#008ec4
+hi Visual term=reverse cterm=NONE ctermbg=240 ctermfg=fg gui=NONE guibg=#545454 guifg=fg
+hi VisualNOS term=bold,underline cterm=NONE ctermbg=238 ctermfg=fg gui=NONE guibg=#424242 guifg=fg
+hi WarningMsg term=NONE cterm=NONE ctermbg=bg ctermfg=169 gui=NONE guibg=bg guifg=#e32791
+hi WildMenu term=NONE cterm=NONE ctermbg=251 ctermfg=234 gui=NONE guibg=#c6c6c6 guifg=#212121
+hi DiffDelete term=bold cterm=NONE ctermbg=bg ctermfg=169 gui=NONE guibg=bg guifg=#e32791
+hi DiffText term=reverse cterm=NONE ctermbg=bg ctermfg=38 gui=NONE guibg=bg guifg=#008ec4
+hi vimMenuMap term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSynMtchGroup term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimHiTermcap term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimCommentTitleLeader term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyCurlyBlockDelimiter term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyCurlyBlock term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyArrayDelimiter term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyArrayLiteral term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyBlockExpression term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyCaseExpression term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyConditionalExpression term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi rubyOptionalDoLine term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimPatRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi Folded term=NONE cterm=NONE ctermbg=bg ctermfg=243 gui=NONE guibg=bg guifg=#767676
+hi FoldColumn term=NONE cterm=NONE ctermbg=bg ctermfg=238 gui=NONE guibg=bg guifg=#424242
+hi DiffAdd term=bold cterm=NONE ctermbg=bg ctermfg=115 gui=NONE guibg=bg guifg=#5fd7a7
+hi DiffChange term=bold cterm=NONE ctermbg=bg ctermfg=142 gui=NONE guibg=bg guifg=#a89c14
+hi vimCollection term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi vimSubstPat term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
+hi SignColumn term=NONE cterm=NONE ctermbg=bg ctermfg=115 gui=NONE guibg=bg guifg=#5fd7a7
+hi Conceal term=NONE cterm=NONE ctermbg=248 ctermfg=252 gui=NONE guibg=#a9a9a9 guifg=#d3d3d3
+hi SpellBad term=reverse cterm=underline ctermbg=bg ctermfg=169 gui=underline guibg=bg guifg=fg guisp=#e32791
+hi SpellCap term=reverse cterm=underline ctermbg=bg ctermfg=115 gui=underline guibg=bg guifg=fg guisp=#5fd7a7
+hi vimSyncRegion term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
 
-let s:black           = { "gui": "#212121", "cterm": "0"   }
-let s:medium_gray     = { "gui": "#767676", "cterm": "243" }
-let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
-let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
-let s:light_black     = { "gui": "#424242", "cterm": "8"   }
-let s:lighter_black   = { "gui": "#545454", "cterm": "240" }
-let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
-let s:light_gray      = { "gui": "#B2B2B2", "cterm": "249" }
-let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
-let s:pink            = { "gui": "#fb007a", "cterm": "9"   }
-let s:dark_red        = { "gui": "#C30771", "cterm": "1"   }
-let s:light_red       = { "gui": "#E32791", "cterm": "1"   }
-let s:orange          = { "gui": "#D75F5F", "cterm": "167" }
-let s:darker_blue     = { "gui": "#005F87", "cterm": "18"  }
-let s:dark_blue       = { "gui": "#008EC4", "cterm": "4"   }
-let s:blue            = { "gui": "#20BBFC", "cterm": "12"  }
-let s:light_blue      = { "gui": "#b6d6fd", "cterm": "153" }
-let s:dark_cyan       = { "gui": "#20A5BA", "cterm": "6"   }
-let s:light_cyan      = { "gui": "#4FB8CC", "cterm": "14"  }
-let s:dark_green      = { "gui": "#10A778", "cterm": "2"   }
-let s:light_green     = { "gui": "#5FD7A7", "cterm": "10"  }
-let s:dark_purple     = { "gui": "#523C79", "cterm": "5"   }
-let s:light_purple    = { "gui": "#6855DE", "cterm": "13"  }
-let s:yellow          = { "gui": "#F3E430", "cterm": "11"  }
-let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
-
-if &background == "dark"
-  let s:bg              = s:black
-  let s:bg_subtle       = s:light_black
-  let s:bg_very_subtle  = s:subtle_black
-  let s:norm            = s:lighter_gray
-  let s:norm_subtle     = s:light_gray
-  let s:purple          = s:light_purple
-  let s:cyan            = s:light_cyan
-  let s:green           = s:light_green
-  let s:red             = s:light_red
-  let s:visual          = s:lighter_black
-else
-  let s:bg              = s:actual_white
-  let s:bg_subtle       = s:light_gray
-  let s:bg_very_subtle  = s:lighter_gray
-  let s:norm            = s:light_black
-  let s:norm_subtle     = s:lighter_black
-  let s:purple          = s:dark_purple
-  let s:cyan            = s:dark_cyan
-  let s:green           = s:dark_green
-  let s:red             = s:dark_red
-  let s:visual          = s:light_blue
-endif
-
-" https://github.com/noahfrederick/vim-hemisu/
-function! s:h(group, style)
-  execute "highlight" a:group
-    \ "guifg="   (has_key(a:style, "fg")    ? a:style.fg.gui   : "NONE")
-    \ "guibg="   (has_key(a:style, "bg")    ? a:style.bg.gui   : "NONE")
-    \ "guisp="   (has_key(a:style, "sp")    ? a:style.sp.gui   : "NONE")
-    \ "gui="     (has_key(a:style, "gui")   ? a:style.gui      : "NONE")
-    \ "ctermfg=" (has_key(a:style, "fg")    ? a:style.fg.cterm : "NONE")
-    \ "ctermbg=" (has_key(a:style, "bg")    ? a:style.bg.cterm : "NONE")
-    \ "cterm="   (has_key(a:style, "cterm") ? a:style.cterm    : "NONE")
-endfunction
-
-call s:h("Normal",        {"bg": s:bg, "fg": s:norm})
-call s:h("Cursor",        {"bg": s:blue, "fg": s:norm })
-call s:h("Comment",       {"fg": s:medium_grey, "gui": "italic"})
-
-"call s:h("Constant",      {"fg": s:cyan})
 hi! link Constant         Normal
 hi! link Character        Constant
 hi! link Number           Constant
 hi! link Boolean          Constant
 hi! link Float            Constant
 hi! link String           Constant
-
-"call s:h("Identifier",    {"fg": s:dark_blue})
 hi! link Identifier       Normal
 hi! link Function         Identifier
-
-"call s:h("Statement",     {"fg": s:green})
 hi! link Statement        Normal
 hi! link Conditonal       Statement
 hi! link Repeat           Statement
@@ -103,93 +220,21 @@ hi! link Label            Statement
 hi! link Operator         Statement
 hi! link Keyword          Statement
 hi! link Exception        Statement
-
-"call s:h("PreProc",       {"fg": s:red})
 hi! link PreProc          Normal
 hi! link Include          PreProc
 hi! link Define           PreProc
 hi! link Macro            PreProc
 hi! link PreCondit        PreProc
-
-"call s:h("Type",          {"fg": s:purple})
 hi! link Type             Normal
 hi! link StorageClass     Type
 hi! link Structure        Type
 hi! link Typedef          Type
-
-"call s:h("Special",       {"fg": s:pink})
 hi! link Special          Normal
 hi! link SpecialChar      Special
 hi! link Tag              Special
 hi! link Delimiter        Special
 hi! link SpecialComment   Special
 hi! link Debug            Special
-
-call s:h("Underlined",    {"fg": s:norm, "gui": "underline", "cterm": "underline"})
-call s:h("Ignore",        {"fg": s:bg})
-call s:h("Error",         {"fg": s:actual_white, "bg": s:red, "cterm": "bold"})
-call s:h("Todo",          {"fg": s:actual_white, "bg": s:pink, "gui": "bold", "cterm": "bold"})
-call s:h("SpecialKey",    {"fg": s:light_green})
-call s:h("NonText",       {"fg": s:medium_gray})
-call s:h("Directory",     {"fg": s:dark_blue})
-call s:h("ErrorMsg",      {"fg": s:pink})
-call s:h("IncSearch",     {"bg": s:yellow, "fg": s:light_black})
-call s:h("Search",        {"bg": s:bg_subtle})
-call s:h("MoreMsg",       {"fg": s:medium_gray, "cterm": "bold", "gui": "bold"})
-hi! link ModeMsg MoreMsg
-call s:h("LineNr",        {"fg": s:bg_subtle})
-call s:h("CursorLineNr",  {"fg": s:blue, "bg": s:bg_very_subtle})
-call s:h("Question",      {"fg": s:red})
-call s:h("StatusLine",    {"bg": s:bg_very_subtle})
-call s:h("StatusLineNC",  {"bg": s:bg_very_subtle, "fg": s:medium_gray})
-call s:h("VertSplit",     {"bg": s:bg_very_subtle, "fg": s:bg_very_subtle})
-call s:h("Title",         {"fg": s:dark_blue})
-call s:h("Visual",        {"bg": s:visual})
-call s:h("VisualNOS",     {"bg": s:bg_subtle})
-call s:h("WarningMsg",    {"fg": s:red})
-call s:h("WildMenu",      {"fg": s:bg, "bg": s:norm})
-call s:h("Folded",        {"fg": s:medium_gray})
-call s:h("FoldColumn",    {"fg": s:bg_subtle})
-call s:h("DiffAdd",       {"fg": s:green})
-call s:h("DiffDelete",    {"fg": s:red})
-call s:h("DiffChange",    {"fg": s:dark_yellow})
-call s:h("DiffText",      {"fg": s:dark_blue})
-call s:h("SignColumn",    {"fg": s:light_green})
-
-if has("gui_running")
-  call s:h("SpellBad",    {"gui": "underline", "sp": s:red})
-  call s:h("SpellCap",    {"gui": "underline", "sp": s:light_green})
-  call s:h("SpellRare",   {"gui": "underline", "sp": s:pink})
-  call s:h("SpellLocal",  {"gui": "underline", "sp": s:dark_green})
-else
-  call s:h("SpellBad",    {"cterm": "underline", "fg": s:red})
-  call s:h("SpellCap",    {"cterm": "underline", "fg": s:light_green})
-  call s:h("SpellRare",   {"cterm": "underline", "fg": s:pink})
-  call s:h("SpellLocal",  {"cterm": "underline", "fg": s:dark_green})
-endif
-
-call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_subtle})
-call s:h("PmenuSel",      {"fg": s:norm, "bg": s:blue})
-call s:h("PmenuSbar",     {"fg": s:norm, "bg": s:bg_subtle})
-call s:h("PmenuThumb",    {"fg": s:norm, "bg": s:bg_subtle})
-call s:h("TabLine",       {"fg": s:norm, "bg": s:bg_very_subtle})
-call s:h("TabLineSel",    {"fg": s:blue, "bg": s:bg_subtle, "gui": "bold", "cterm": "bold"})
-call s:h("TabLineFill",   {"fg": s:norm, "bg": s:bg_very_subtle})
-call s:h("CursorColumn",  {"bg": s:bg_very_subtle})
-call s:h("CursorLine",    {"bg": s:bg_very_subtle})
-call s:h("ColorColumn",   {"bg": s:bg_subtle})
-
-call s:h("MatchParen",    {"bg": s:bg_subtle, "fg": s:norm})
-call s:h("qfLineNr",      {"fg": s:medium_gray})
-
-call s:h("htmlH1",        {"bg": s:bg, "fg": s:norm})
-call s:h("htmlH2",        {"bg": s:bg, "fg": s:norm})
-call s:h("htmlH3",        {"bg": s:bg, "fg": s:norm})
-call s:h("htmlH4",        {"bg": s:bg, "fg": s:norm})
-call s:h("htmlH5",        {"bg": s:bg, "fg": s:norm})
-call s:h("htmlH6",        {"bg": s:bg, "fg": s:norm})
-
-" Signify, git-gutter
 hi link SignifySignAdd              LineNr
 hi link SignifySignDelete           LineNr
 hi link SignifySignChange           LineNr
@@ -197,7 +242,6 @@ hi link GitGutterAdd                LineNr
 hi link GitGutterDelete             LineNr
 hi link GitGutterChange             LineNr
 hi link GitGutterChangeDelete       LineNr
-
 hi! link String Normal
 hi! link Special Normal
 hi! link Type Normal
@@ -205,3 +249,4 @@ hi SneakPluginTarget ctermfg=196 guifg=red ctermbg=16 guibg=Black
 hi SneakStreakMask guifg=#737373 ctermfg=243 guibg=Black ctermbg=16 gui=NONE cterm=NONE term=NONE
 hi SneakStreakTarget ctermfg=196 guifg=red ctermbg=16 guibg=Black 
 hi link SneakStreakStatusLine StatusLineNC
+
